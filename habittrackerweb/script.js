@@ -1,5 +1,5 @@
 // CONFIG
-const BIN_ID = "6898ee43d0ea881f40561e0f";
+const BIN_ID = "68a7cebcd0ea881f405fe015";
 const MASTER_KEY = "$2a$10$B1NO8e/W55aFFe7GdHmfTulJzyMAGNYFAKgFQqYGj6Nw3V4N58/kq";
 const BASE_URL = `https://api.jsonbin.io/v3/b/${BIN_ID}`;
 
@@ -92,4 +92,5 @@ function renderTable(habits, datesData) {
     let data = await fetchData();
     renderTable(data.Habit, data.Dates);
 })();
+
 
