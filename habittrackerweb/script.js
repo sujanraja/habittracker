@@ -4,7 +4,7 @@ const MASTER_KEY = "$2a$10$B1NO8e/W55aFFe7GdHmfTulJzyMAGNYFAKgFQqYGj6Nw3V4N58/kq
 const BASE_URL = `https://api.jsonbin.io/v3/b/${BIN_ID}`;
 
 // Dates
-let startDate = new Date(2025, 7, 22); // July = 6 (0-based)
+let startDate = new Date(2025, 7, 25); // July = 6 (0-based)
 let days = 21;
 let dateColumns = Array.from({ length: days }, (_, i) => {
     let d = new Date(startDate);
@@ -92,5 +92,6 @@ function renderTable(habits, datesData) {
     let data = await fetchData();
     renderTable(data.Habit, data.Dates);
 })();
+
 
 
